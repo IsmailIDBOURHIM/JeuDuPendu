@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Pendu</title>
+    <!-- <link href="style.css" rel="stylesheet" type="text/css" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="diction.js"></script>
+  </head>
+  <body>
+    <section class="info-jeu">
+      <div id="lettreUtilisee"></div>
+      <div id="motDeviner"></div>
+
+    </section><br>
+    
+    <input id="lettreSelectionnee" type="text" maxlength= "1"> <br />
+    <button onclick="lettreSelectionnee ()">Ajouter Lettre</button> 
+    <h1 id="message"></h1>
+    <button onclick="reload()" id="actualiser">Un Autre Mot</button>
+    <div id="mystere-tableau"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
