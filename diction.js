@@ -1,1 +1,1 @@
-var Mots = ["manger", "vendre", "acheter", "prendre"];
+var Mots = ["add", "lol"];

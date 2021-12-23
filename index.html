@@ -15,11 +15,22 @@
 
     </section><br>
     
-    <input id="lettreSelectionnee" type="text" maxlength= "1"> <br />
-    <button onclick="lettreSelectionnee ()">Ajouter Lettre</button> 
-    <h1 id="message"></h1>
-    <button onclick="reload()" id="actualiser">Un Autre Mot</button>
-    <div id="mystere-tableau"></div>
+    <!-- <input id="lettreSelectionnee" type="text" maxlength= "1"> <br /> -->
+    <section id= "formulaire">
+      <input id="lettreSelectionnee" type="text" maxlength= "1"> <br />
+      <button id="debut-jeu">Jouer</button>
+    </section>
+    
+    <!-- <button onclick="lettreSelectionnee ()">Ajouter Lettre</button>  -->
+    
+    <section class= "sec-message">
+      <h1 id="message"></h1>
+      <h1 id="nom-joueur"></h1>
+      <input id= "inname" type= "text" placeholder="Entrez votre nom" value= ""> <br />
+    </section>
+    
+    <button id="actualiser">Un Autre Mot</button>
+    <div id="tableau-joueur"></div>
     <script src="script.js"></script>
   </body>
 </html>
