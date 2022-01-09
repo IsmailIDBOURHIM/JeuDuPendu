@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Pendu Version Simple</title>
+    <link href="../css/style1.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../js/methodesCommuns.js"></script>
+  </head>
+  <body>
+    <div id="changerMode">
+      <a href="../index.html"><button class ="btnMode" id="btnHome">Accueil</button></a>
+      <a href="../html/indexVOrdi.html"><button class ="btnMode" id="modeOrdi">Mode ordinateur</button></a>
+    </div>
+    <div id="dessin" >
+      <img id = "lose" src= "../images/LOSE.gif" class ="win_lose" style= "display: none">
+      <img id = "win" src= "../images/WIN.gif" class ="win_lose" style= "display: none">
+
+      <svg id ="dessin-bonhomme" width="350" height="290" >
+            <!-- ----Support---- -->
+        <line class= "support" x1="25" y1="270" x2="100" y2="270" style="stroke:rgb(175, 116, 22);stroke-width:4"></line>
+        <line class= "support" x1="60" y1="60" x2="60" y2="270" style="stroke:rgb(175, 116, 22);stroke-width:4"></line>
+        <line class= "support" x1="59" y1="60" x2="190" y2="60" style="stroke:rgb(175, 116, 22);stroke-width:4"></line>
+        <line class= "support" x1="60" y1="100" x2="110" y2="60" style="stroke:rgb(175, 116, 22);stroke-width:4"></line>
+        <line class= "support" x1="190" y1="90" x2="190" y2="60" style="stroke:rgb(175, 116, 22);stroke-width:4"></line>
+        
+            <!-- ----Bonhomme---- -->
+        <circle id= "tete" cx="190" cy="111" r="20" stroke="rgb(189, 49, 96)" stroke-width="6" fill="rgb(189, 49, 96)"></circle>
+        <line id= "corps" x1="190" y1="198" x2="190" y2="130" style="stroke:rgb(189, 49, 96);stroke-width:4"></line>
+        <line id= "brasG" x1="140" y1="140" x2="190" y2="160" style="stroke:rgb(189, 49, 96);stroke-width:4"></line>
+        <line id= "brasD" x1="190" y1="160" x2="240" y2="140" style="stroke:rgb(189, 49, 96);stroke-width:4"></line>
+        <line id= "jambeG" x1="145" y1="220" x2="190" y2="198" style="stroke:rgb(189, 49, 96);stroke-width:4"></line>
+        <line id= "jambeD" x1="190" y1="198" x2="235" y2="220" style="stroke:rgb(189, 49, 96);stroke-width:4"></line>
+      </svg>
+
+    </div><br>
+
+    <audio id="audio-gagner" >
+      <source src= "../audio/gagner.mp3" type ="audio/mp3"/>
+    </audio>
+    <audio id="audio-perdre">
+      <source src= "../audio/perdre.mp3" type ="audio/mp3"/>
+    </audio>
+    <div id="motDeviner"></div>
+
+    <section class= "sec-message">
+      <h1 id="message"></h1>
+      <h1 id="nom-joueur"></h1>
+      <input id= "inname" type= "hidden" placeholder="Entrez votre nom" value= ""> 
+    </section>
+
+    <button id="rejouer" >Rejouer</button>
+
+    <div id="clavier"></div><br>
+
+    <button id="changerMot">Changer mot</button>
+
+    <div id="tableau-joueur"></div><br>
+
+    <div class="coppyright">Copyright © <strong>Ismail_IDBOURHIM <em>2022</em></strong> Tous droits résérvés</div><br>
+    <script src="../js/scriptVJoueur.js"></script>
+  </body>
+</html>
